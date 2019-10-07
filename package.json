@@ -1,0 +1,8 @@
+{
+    "name": "odoo_erp_ikea_bot",
+    "version": "1.0.0",
+    "dependencies": {
+        "https-proxy-agent": "^2.2.2",
+        "telegraf": "^3.32.0"
+    }
+}
