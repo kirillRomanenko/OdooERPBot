@@ -8,12 +8,15 @@ const bot = new Telegraf('920335983:AAFlDP4sSiRpOsUBCIbf9hxHAqnbTrrN6Dw',{
         })
     }
 }); // Создаем нашего бота и прописываем прокси (для РФ)
+const text = "hi!\n"+
+            "hello";
 bot.start((ctx) => {
     console.log('Id пользователя:', ctx.from.id);
     return ctx.reply('Добро пожаловать!');
   });
-  bot.hears('/hi', ctx => {
-    return ctx.reply('Hey!');
+  bot.hears('hi', ctx => {
+      
+     return ctx.reply(text);
    });
    
    bot.startPolling();
